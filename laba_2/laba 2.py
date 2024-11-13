@@ -51,20 +51,17 @@ class Planets(QWidget):
             painter.setPen(QColor(*planets_color[i], 150))
             painter.setBrush(QColor(*planets_color[i], 150))
             crd = coord(400, 300, r, 20, angele=self.initial_angles[i])
-            if i >= 2:
-                # Рисуем спутник
+            if i == 2:
                 coord(crd[0], crd[1], 30, 3, speed=4)
-                if i == 4:
-                    coord(crd[0], crd[1], 30, 3, speed=3, angele=self.initial_angles[i])
-                if i == 5:
-                    #Кольца
-                    painter.setBrush(QColor(*planets_color[i], 16))
-                    painter.drawEllipse(QPoint(crd[0], crd[1]), 30, 30)
-                    painter.drawEllipse(QPoint(crd[0], crd[1]), 35, 35)
-                    painter.drawEllipse(QPoint(crd[0], crd[1]), 37, 37)
-                    painter.drawEllipse(QPoint(crd[0], crd[1]), 40, 40)
+            if i == 5:
+                #Кольца
+                painter.setBrush(QColor(*planets_color[i], 16))
+                painter.drawEllipse(QPoint(crd[0], crd[1]), 30, 30)
+                painter.drawEllipse(QPoint(crd[0], crd[1]), 35, 35)
+                painter.drawEllipse(QPoint(crd[0], crd[1]), 37, 37)
+                painter.drawEllipse(QPoint(crd[0], crd[1]), 40, 40)
 
-            r += 20
+            r += 30
 
 app = QApplication(sys.argv)
 window = Planets()
