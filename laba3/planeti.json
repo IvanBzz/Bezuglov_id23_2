@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Солнце",
+        "skorost": 0,
+        "color": [255, 255, 0],
+        "initial_angle": 45.3,
+        "radius": 55
+    },
+    {
+        "name": "Меркурий",
+        "skorost": 3,
+        "color": [150, 160, 120],
+        "initial_angle": 12.7,
+        "radius": 9
+    },
+    {
+        "name": "Венера",
+        "skorost": 2,
+        "color": [255, 100, 0],
+        "initial_angle": 198.4,
+        "radius": 12
+    },
+    {
+        "name": "Земля",
+        "skorost": 1.8,
+        "color": [50, 205, 50],
+        "initial_angle": 30.7,
+        "radius": 12,
+        "sputnik": [
+            {
+                "skorost": 1.6,
+                "color": [255, 180, 180],
+                "initial_angle": 90.5,
+                "radius": 3
+            }
+        ]
+    },
+    {
+        "name": "Марс",
+        "skorost": 0.9,
+        "color": [220, 60, 30],
+        "initial_angle": 231.8,
+        "radius": 9,
+        "sputnik": [
+            {
+                
+                "skorost": 1.4,
+                "color": [139, 137, 137],
+                "initial_angle": 180.3,
+                "radius": 2
+            }
+        ]
+    },
+    {
+        "name": "Юпитер",
+        "skorost": 0.5,
+        "color": [255, 220, 90],
+        "initial_angle": 120.0,
+        "radius": 35,
+        "sputnik": [
+            {
+                
+                "skorost": 1.5,
+                "color": [200, 200, 200],
+                "initial_angle": 15.7,
+                "radius": 4
+            },
+            {
+                
+                "skorost": 1.4,
+                "color": [169, 169, 169],
+                "initial_angle": 300.9,
+                "radius": 3
+            }
+        ]
+    },
+    {
+        "name": "Saturn",
+        "skorost": 0.4,
+        "color": [255, 130, 30],
+        "initial_angle": 90.6,
+        "radius": 25,
+        "sputnik": [
+            {
+                "skorost": 1.2,
+                "color": [255, 130, 30],
+                "initial_angle": 240.4,
+                "radius": 4
+            }
+        ]
+    },
+    {
+        "name": "Уран",
+        "skorost": 0.3,
+        "color": [0, 150, 200],
+        "initial_angle": 330.1,
+        "radius": 32,
+        "sputnik": [
+            {
+                "skorost": 1.1,
+                "color": [176, 224, 230],
+                "initial_angle": 15.6,
+                "radius": 4
+            }
+        ]
+    },
+    {
+        "name": "Нептун",
+        "skorost": 0.2,
+        "color": [20, 100, 230],
+        "initial_angle": 20,
+        "radius": 28,
+        "sputnik": [
+            {
+                "skorost": 1.3,
+                "color": [135, 206, 235],
+                "initial_angle": 220.3,
+                "radius": 2
+            }
+        ]
+    }
+]
