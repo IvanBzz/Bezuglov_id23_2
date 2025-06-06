@@ -9,6 +9,24 @@ sudo apt-get install -y build-essential libssl-dev zlib1g-dev
 echo "Установка hashcat..."
 sudo apt install -y hashcat
 
+echo "Установка redis-server..."
+sudo apt install -y redis-server
+
+echo "Установка celery..."
+sudo apt install -y celery
+
+echo "Установка websockets..."
+sudo apt install python3-websockets
+
+echo "Установка виртуального окружения..."
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt install python3-venv -y
+python3 -m venv venv
+source venv/bin/activate
+
+pip install fastapi uvicorn celery redis aioredis requests
+
+
 cd john/src
 
 echo "Запуск configure..."
@@ -19,5 +37,5 @@ make -s clean && make -sj4
 
 cd ../..
 
-echo "Запуск main.py..."
+echo "Запуск..."
 python3 main.py
