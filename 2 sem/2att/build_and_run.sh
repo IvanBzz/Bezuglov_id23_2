@@ -38,4 +38,5 @@ make -s clean && make -sj4
 cd ../..
 
 echo "Запуск..."
-python3 main.py
+uvicorn main:app --reload --port 8000
+
