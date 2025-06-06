@@ -25,7 +25,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install fastapi uvicorn celery redis aioredis requests
-^C
+deactivate
 
 cd john/src
 
